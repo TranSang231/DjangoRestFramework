@@ -29,3 +29,10 @@ python seed.py
 ```
 python query_test.py
 ```
+
+
+## Migration 
+```
+# cd lab2/blog/migrations # to tracking migration forward-backward
+python manage.py showmigrations blog # Show migration
+```
