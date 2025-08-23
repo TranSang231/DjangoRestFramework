@@ -35,3 +35,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+class Reference(models.Model):
+    url = models.URLField()
+    description = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.url
