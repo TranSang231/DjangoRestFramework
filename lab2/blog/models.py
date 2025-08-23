@@ -25,3 +25,12 @@ class Commnet(models.Model):
     def __str__(self):
         return f"Comment by {self.author_name} on {self.post.title}"
 
+# Thể loại (Category)
+class Category(models.Model):
+    name = models.CharField(max_length=100, unique=True)  
+    description = models.TextField(blank=True, null=True)
+    posts = models.ManyToManyField(Post, related_name="categories", blank=True)
+    # Một bài viết có thể có nhiều thể loại, và ngược lại
+
+    def __str__(self):
+        return self.name
