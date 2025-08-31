@@ -1,22 +1,31 @@
 from django.http import HttpResponse
+from django.http import HttpResponse
+from django.views import View
 
-def index(request):
-    return HttpResponse("Đây là trang chủ")
+class IndexView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang chủ (Class-based View)")
 
-def about(request):
-    return HttpResponse("Đây là trang giới thiệu")
+class AboutView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang giới thiệu (Class-based View)")
 
-def contact(request):
-    return HttpResponse("Đây là trang liên hệ")
+class ContactView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang liên hệ (Class-based View)")
 
-def services(request):
-    return HttpResponse("Đây là trang dịch vụ")
+class ServicesView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang dịch vụ (Class-based View)")
 
-def products(request):
-    return HttpResponse("Đây là trang sản phẩm")
+class ProductsView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang sản phẩm (Class-based View)")
 
-def blog(request):
-    return HttpResponse("Đây là trang blog")
+class BlogView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang blog (Class-based View)")
 
-def faq(request):
-    return HttpResponse("Đây là trang câu hỏi thường gặp (FAQ)")
+class FAQView(View):
+    def get(self, request):
+        return HttpResponse("Đây là trang câu hỏi thường gặp (FAQ) - Class-based View")

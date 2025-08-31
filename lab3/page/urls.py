@@ -1,12 +1,15 @@
 from django.urls import path
-from . import views
+from .views import (
+    IndexView, AboutView, ContactView, 
+    ServicesView, ProductsView, BlogView, FAQView
+)
 
 urlpatterns = [
-    path('', views.index, name='index'),         # URL /
-    path('about/', views.about, name='about'),   # URL /about/
-    path('contact/', views.contact, name='contact'),
-    path('services/', views.services, name='services'),
-    path('products/', views.products, name='products'),
-    path('blog/', views.blog, name='blog'),
-    path('faq/', views.faq, name='faq'),
+    path('', IndexView.as_view(), name='index'),
+    path('about/', AboutView.as_view(), name='about'),
+    path('contact/', ContactView.as_view(), name='contact'),
+    path('services/', ServicesView.as_view(), name='services'),
+    path('products/', ProductsView.as_view(), name='products'),
+    path('blog/', BlogView.as_view(), name='blog'),
+    path('faq/', FAQView.as_view(), name='faq'),
 ]
