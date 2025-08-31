@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Django Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>🌐 Website Django Demo</h1>
+        <nav>
+            <a href="/">Trang chủ</a> |
+            <a href="/about/">Giới thiệu</a> |
+            <a href="/contact/">Liên hệ</a> |
+            <a href="/services/">Dịch vụ</a> |
+            <a href="/products/">Sản phẩm</a> |
+            <a href="/blog/">Blog</a> |
+            <a href="/faq/">FAQ</a> |
+            <a href="/careers/">Tuyển dụng</a> |
+            <a href="/privacy/">Chính sách</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2025 Django Demo</p>
+    </footer>
+</body>
+</html>
