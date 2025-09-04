@@ -1,4 +1,4 @@
-# THIS IS LAB DIJANGO 2 : THE VIEW LAYER
+# THIS IS LAB DIJANGO 2
 
 ## INSTALL ENVIROMENT 
 ### Step 1: Create vituel enviroment
@@ -15,8 +15,22 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## PRATICE CONTENT
-### url config
-### view function
-### view class
-### template basic
+## RUN SCRIPTS
+
+### Generator Database
+```
+cd lab2
+python seed.py
+```
+
+### Test Scripts 
+```
+python query_test.py
+```
+
+
+## Migration 
+```
+# cd lab2/blog/migrations # to tracking migration forward-backward
+python manage.py showmigrations blog # Show migration
+```
