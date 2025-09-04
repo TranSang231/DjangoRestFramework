@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}FAQ{% endblock %}
+{% block content %}
+<h2>Câu hỏi thường gặp</h2>
+<ul>
+    {% for q in faqs %}
+        <li><strong>{{ q.question }}</strong> - {{ q.answer }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

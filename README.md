@@ -1,4 +1,4 @@
-# THIS IS LAB DIJANGO 2 : THE LAYER MODEL
+# THIS IS LAB DIJANGO 2
 
 ## INSTALL ENVIROMENT 
 ### Step 1: Create vituel enviroment
@@ -14,8 +14,6 @@ python -m venv .venv
 ```
 pip install -r requirements.txt
 ```
-
-
 
 ## RUN SCRIPTS
 
